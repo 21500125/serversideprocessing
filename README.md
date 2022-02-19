@@ -91,7 +91,9 @@ Publish the website in the given URL.
     
 </body>
 </html>
+```
 ### view.py:
+```
 from django.shortcuts import render
 
 def areacalculation(request):
@@ -108,7 +110,9 @@ def areacalculation(request):
         context['b']=b
         context['h']=h
     return render(request,"mathapp/area.html",context)
+```
 ### urls.py:
+````
 from django.contrib import admin
 from django.urls import path
 from mathapp import views
