@@ -93,7 +93,7 @@ Publish the website in the given URL.
 </html>
 ```
 ### view.py:
-```
+
 from django.shortcuts import render
 
 def areacalculation(request):
@@ -121,8 +121,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('areaoftriangle/',views.areacalculation,name="areaoftriangle"),
     path('',views.areacalculation,name="areaoftriangleroot")
-]
-```
+]```
 ## OUTPUT:
 
 ![ex9](https://user-images.githubusercontent.com/94219582/154813997-34604915-1fb7-4aaa-9de2-1556427704b3.PNG)
